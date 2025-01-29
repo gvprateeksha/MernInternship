@@ -1,0 +1,36 @@
+/* Add this CSS in App.css or a separate CSS file */
+
+/* Slow bouncy animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+.bouncy {
+  animation: bounce 3s ease-in-out infinite;
+}
+
+/* Fullscreen sections */
+.full-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Optional: Add shadows to sections */
+.full-screen.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
